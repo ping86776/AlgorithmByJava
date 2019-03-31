@@ -6,16 +6,17 @@ package Leetcode;
 public class Robot {
     public boolean judgeCircle(String moves) {
         int x = 0, y = 0;
-        for (int i = 0; i < moves.length(); i++) {
-            switch (moves.charAt(i)){
-                case 'U': y++; continue;
-                case 'D': y--; continue;
-                case 'R': x++; continue;
-                case 'L': x--;
+        int n = moves.length()-1;
+        while (n >= 0){
+            switch (moves.charAt(n)){
+                case 'U': y++; break;
+                case 'D': y--; break;
+                case 'R': x++; break;
+                case 'L': x--; break;
             }
-
+            n--;
         }
-        if (x==0&&y==0){
+        if (x == 0&&y == 0){
             return true;
         }else return false;
 
@@ -24,7 +25,6 @@ public class Robot {
     public static void main(String[] args) {
         String str = "UL";
         Robot robot = new Robot();
-
         System.out.println(robot.judgeCircle(str));
     }
 }
