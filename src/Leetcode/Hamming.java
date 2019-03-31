@@ -1,5 +1,8 @@
 package Leetcode;
 
+/**
+ * 461. Hamming Distance 汉明距离
+ */
 public class Hamming {
     public int hammingDistance(int x, int y) {
         String a = Integer.toBinaryString(x^y);
