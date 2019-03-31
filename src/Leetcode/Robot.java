@@ -23,7 +23,7 @@ public class Robot {
     }
 
     public static void main(String[] args) {
-        String str = "UL";
+        String str = "UD";
         Robot robot = new Robot();
         System.out.println(robot.judgeCircle(str));
     }
