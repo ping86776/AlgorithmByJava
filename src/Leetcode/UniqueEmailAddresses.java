@@ -4,11 +4,11 @@ import java.util.HashSet;
 
 
 /**
- * 929. 独特的电子邮件地址 Created by Ping on 2019/3/26.
+ * 929. 鐙壒鐨勭數瀛愰偖浠跺湴鍧� Created by Ping on 2019/3/26.
  */
 public class UniqueEmailAddresses {
     public static int numUniqueEmails(String[] emails) {
-        HashSet<String> set = new HashSet<>();  //不重复
+        HashSet<String> set = new HashSet<>();
 
         for (String str : emails){
             String[] arr = str.split("@");
