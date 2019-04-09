@@ -7,7 +7,7 @@ import java.util.*;
  */
 
 /**
- * ·´ĞòÊä³ö ÊäÈëÈÎÒâ4¸ö×Ö·û(Èç£ºabcd)£¬ ²¢°´·´ĞòÊä³ö(Èç£ºdcba)
+ * ååºè¾“å‡º è¾“å…¥ä»»æ„4ä¸ªå­—ç¬¦(å¦‚ï¼šabcd)ï¼Œ å¹¶æŒ‰ååºè¾“å‡º(å¦‚ï¼šdcba)
  */
 public class Reverse{
     public static void main(String[] args){
