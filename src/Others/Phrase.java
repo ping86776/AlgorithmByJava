@@ -3,7 +3,7 @@ package Others;
 import java.util.Arrays;
 
 /**
- * 判断是否为回文串 Created by Ping on 2019/3/28.
+ * 鍒ゆ柇鏄惁涓哄洖鏂囦覆 Created by Ping on 2019/3/28.
  */
 
 public class Phrase {
