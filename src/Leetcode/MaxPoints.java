@@ -6,7 +6,7 @@ package Leetcode;
 
 
 /**
- * ¸ø¶¨2DÆ½ÃæÉÏµÄn¸öµã£¬ÕÒµ½Î»ÓÚÍ¬Ò»Ö±ÏßÉÏµÄ×î´óµãÊı¡£
+ * ç»™å®š2Då¹³é¢ä¸Šçš„nä¸ªç‚¹ï¼Œæ‰¾åˆ°ä½äºåŒä¸€ç›´çº¿ä¸Šçš„æœ€å¤§ç‚¹æ•°ã€‚
  */
 class Point {
     int x;
@@ -19,15 +19,15 @@ public class MaxPoints {
         int max = 0,count;
         int a, b, c;
         int i;
-        //Ğ¡ÓÚÁ½¸öµãµÄÇé¿ö
+        //å°äºä¸¤ä¸ªç‚¹çš„æƒ…å†µ
         if(points.length < 2) return points.length;
-        //µãÖØºÏµÄÇé¿ö
+        // ç‚¹é‡åˆçš„æƒ…å†µ
         for(i=1; i<points.length; i++) {
             if(points[0].x!=points[i].x || points[0].y!=points[i].y) break;
         }
-        //ÅĞ¶ÏËùÓĞµãÊÇ²»ÊÇ¶¼ÖØºÏ
+        //åˆ¤æ–­æ‰€æœ‰ç‚¹æ˜¯ä¸æ˜¯éƒ½é‡åˆ
         if(i== points.length)    return points.length;
-        //²»ÖØºÏµÄµãÅĞ¶ÏÊÇ·ñÊÇÒ»ÌõÖ±Ïß
+        //ä¸é‡åˆçš„ç‚¹åˆ¤æ–­æ˜¯å¦æ˜¯ä¸€æ¡ç›´çº¿
         for(i = 0; i < points.length-1; i++) {
             for(int j = i+1; j < points.length; j++) {
                 if(points[i].x != points[j].x || points[i].y != points[j].y) {
