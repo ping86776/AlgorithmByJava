@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 728. ×Ô³ıÊı ¾õµÃ»¹ÊÇÕâÑùºÃ Created by Ping on 2019/4/9.
+ * 728. è‡ªé™¤æ•°ï¼Œè§‰å¾—è¿˜æ˜¯è¿™æ ·å§ Created by Ping on 2019/4/9.
  */
 public class SelfDividing {
     public List<Integer> selfDividingNumbers(int left, int right) {
