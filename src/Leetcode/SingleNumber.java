@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * 136 Single Number ¸ø¶¨Ò»¸öÕûÊıÊı×é£¬³ıÁËÒ»¸öÔªËØÍâ£¬Ã¿¸öÔªËØ¶¼»á³öÏÖÁ½´Î¡£ ÕÒ³öµ¥Ò»µÄÄÇ¸ö¡£
+ * 136 Single Number ç»™å®šä¸€ä¸ªæ•´æ•°æ•°ç»„ï¼Œé™¤äº†ä¸€ä¸ªå…ƒç´ å¤–ï¼Œæ¯ä¸ªå…ƒç´ éƒ½ä¼šå‡ºç°ä¸¤æ¬¡ã€‚ æ‰¾å‡ºå•ä¸€çš„é‚£ä¸ªã€‚
  */
 public class SingleNumber {
     public int singleNumber(int[] A) {
@@ -31,7 +31,7 @@ public class SingleNumber {
         Iterator<Integer> iter = res.iterator();
         return iter.next();
     }
-    // ×îÓÅ·½·¨ÀûÓÃÒì»òµÄĞÔÖÊ
+    // æœ€ä¼˜æ–¹æ³•åˆ©ç”¨å¼‚æˆ–çš„æ€§è´¨
     public int Best(int[] A) {
         int res = 0;
         for (int i = 0; i < A.length; i++) {
