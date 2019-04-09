@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 905. Sort Array By Parity °´ÆæÅ¼ÅÅĞòÊı×é Created by Ping on 2019/3/25.
+ * 905. Sort Array By Parity æŒ‰å¥‡å¶æ’åºæ•°ç»„ Created by Ping on 2019/3/25.
  */
 public class SortArrayByParity {
     public int[] sortArrayByParity(int[] A) {
