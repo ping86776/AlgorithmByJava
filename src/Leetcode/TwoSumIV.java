@@ -44,7 +44,7 @@ public class TwoSumIV {
     }
 
     public void preOrderTraverse(TreeNode node, List<Integer> list) {
-        //中序遍历
+        //中序遍历(这是是二叉搜索树所以用中序)
         if (node == null)
             return ;
         preOrderTraverse(node.left, list);
