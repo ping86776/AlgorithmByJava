@@ -1,7 +1,7 @@
 package Leetcode.BinaryTrees;
 
 /**
- * 104. Maximum Depth of Binary Tree 反转二叉树
+ * 104. Maximum Depth of Binary Tree 二叉树最大深度
  */
 public class MaximumDepthofBinaryTree {
     public int maxDepth(TreeNode root) {
