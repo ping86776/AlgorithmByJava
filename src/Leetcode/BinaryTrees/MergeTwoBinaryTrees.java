@@ -1,5 +1,8 @@
 package Leetcode.BinaryTrees;
 
+/**
+ * 617. Merge Two Binary Trees 合并二叉树
+ */
 
 public class MergeTwoBinaryTrees {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
