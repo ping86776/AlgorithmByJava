@@ -1,4 +1,6 @@
-package Leetcode;
+package Leetcode.BinaryTrees;
+
+import Leetcode.BinaryTrees.TreeNode;
 
 /**
  * 938. Range Sum of BST Created by Ping on 2019/4/15.

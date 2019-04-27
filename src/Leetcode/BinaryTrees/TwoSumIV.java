@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.BinaryTrees;
 
 import java.util.*;
 
@@ -6,12 +6,7 @@ import java.util.*;
  * 653. Two Sum IV - Input is a BST Created by Ping on 2019/4/15.
  * 给定一个二叉搜索树和一个目标结果，如果 BST 中存在两个元素且它们的和等于给定的目标结果，则返回 true。
  */
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
+
 public class TwoSumIV {
     private static List<TreeNode> nodeList = null;
 
