@@ -5,10 +5,10 @@ import java.util.LinkedList;
 
 
 /**
- * ¶ş²æÊ÷Éî¶ÈÓÅÏÈËÑË÷(Õ»ÊµÏÖ)Created by Ping on 2019/4/28.
+ * äºŒå‰æ ‘æ·±åº¦ä¼˜å…ˆæœç´¢(æ ˆå®ç°)Created by Ping on 2019/4/28.
  */
 public class DFS {
-    //Ç°Ğò
+    //å‰åº
     public void preOrderTraverse(TreeNode root){
         LinkedList<TreeNode> stack = new LinkedList<>();
         TreeNode node = root;
@@ -24,7 +24,7 @@ public class DFS {
         }
     }
 
-    //ÖĞĞò
+    //ä¸­åº
     public void midOrderTraverse(TreeNode root){
         LinkedList<TreeNode> stack = new LinkedList<>();
         TreeNode node = root;
@@ -40,5 +40,5 @@ public class DFS {
         }
     }
 
-    //ºóĞò»¹Ã»Åª¶®
+    //ååºè¿˜æ²¡å¼„æ‡‚
 }
