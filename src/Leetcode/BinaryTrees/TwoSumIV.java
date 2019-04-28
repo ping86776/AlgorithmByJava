@@ -4,16 +4,16 @@ import java.util.*;
 
 /**
  * 653. Two Sum IV - Input is a BST Created by Ping on 2019/4/15.
- * ¸ø¶¨Ò»¸ö¶ş²æËÑË÷Ê÷ºÍÒ»¸öÄ¿±ê½á¹û£¬Èç¹û BST ÖĞ´æÔÚÁ½¸öÔªËØÇÒËüÃÇµÄºÍµÈÓÚ¸ø¶¨µÄÄ¿±ê½á¹û£¬Ôò·µ»Ø true¡£
+ * ç»™å®šä¸€ä¸ªäºŒå‰æœç´¢æ ‘å’Œä¸€ä¸ªç›®æ ‡ç»“æœï¼Œå¦‚æœ BST ä¸­å­˜åœ¨ä¸¤ä¸ªå…ƒç´ ä¸”å®ƒä»¬çš„å’Œç­‰äºç»™å®šçš„ç›®æ ‡ç»“æœï¼Œåˆ™è¿”å› trueã€‚
  */
 
 public class TwoSumIV {
     private static List<TreeNode> nodeList = null;
 
-    // ¼òµ¥ÊµÏÖÏÂ¶ş²æÊ÷µÄÊı¾İ½á¹¹
+    // ç®€å•å®ç°ä¸‹äºŒå‰æ ‘çš„æ•°æ®ç»“æ„
     public void createBinTree(int[] arr){
         nodeList = new LinkedList<>();
-        //½«Ò»¸öÊı×éµÄÖµÒÀ´Î×ª»»Îª¶ş²æÊ÷½Úµã
+        //å°†ä¸€ä¸ªæ•°ç»„çš„å€¼ä¾æ¬¡è½¬æ¢ä¸ºäºŒå‰æ ‘èŠ‚ç‚¹
         for (int i = 0; i < arr.length; i++) {
             nodeList.add(new TreeNode(arr[i]));
         }
@@ -23,15 +23,15 @@ public class TwoSumIV {
             nodeList.get(parentIndex).right = nodeList.get(parentIndex*2+2);
         }
         for (int parentIndex = 0; parentIndex < arr.length / 2 - 1; parentIndex++) {
-            //×óº¢×Ó
+            //å·¦å­©å­
             nodeList.get(parentIndex).left = nodeList.get(parentIndex*2+1);
-            //ÓÒº¢×Ó
+            //å³å­©å­
             nodeList.get(parentIndex).right = nodeList.get(parentIndex*2+2);
 
             int lastparentIndex = arr.length/2 - 1;
-            //×îºóÒ»¸ö¸¸½Úµã×óº¢×Ó
+            //æœ€åä¸€ä¸ªçˆ¶èŠ‚ç‚¹å·¦å­©å­
             nodeList.get(lastparentIndex).left = nodeList.get(lastparentIndex*2+1);
-            //Èç¹ûarrÎªÆæÊı²ÅÓĞÓÒº¢×Ó
+            //å¦‚æœarrä¸ºå¥‡æ•°æ‰æœ‰å³å­©å­
             if ((arr.length&1)==1){
                 nodeList.get(lastparentIndex).right = nodeList.get(lastparentIndex*2+2);
             }
@@ -39,7 +39,7 @@ public class TwoSumIV {
     }
 
     public void preOrderTraverse(TreeNode node, List<Integer> list) {
-        //ÖĞĞò±éÀú(ÕâÊÇÊÇ¶ş²æËÑË÷Ê÷ËùÒÔÓÃÖĞĞò)
+        //ä¸­åºéå†(è¿™æ˜¯æ˜¯äºŒå‰æœç´¢æ ‘æ‰€ä»¥ç”¨ä¸­åº)
         if (node == null)
             return ;
         preOrderTraverse(node.left, list);
@@ -62,7 +62,7 @@ public class TwoSumIV {
         }
         return false;
     }
-    //¹Ù·½¸øµÄ·½·¨
+    //å®˜æ–¹ç»™çš„æ–¹æ³•
 //    public boolean findTarget(TreeNode root, int k) {
 //        Set < Integer > set = new HashSet();
 //        return find(root, k, set);
@@ -80,6 +80,6 @@ public class TwoSumIV {
         int[] arr = new int[]{1,2,3};
         TwoSumIV twoSumIV = new TwoSumIV();
         twoSumIV.createBinTree(arr);
-        System.out.println(twoSumIV.findTarget(nodeList.get(0),4)); //¸ù½ÚµãÎª0
+        System.out.println(twoSumIV.findTarget(nodeList.get(0),4)); //æ ¹èŠ‚ç‚¹ä¸º0
     }
 }
