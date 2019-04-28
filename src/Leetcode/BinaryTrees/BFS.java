@@ -3,7 +3,7 @@ package Leetcode.BinaryTrees;
 import java.util.LinkedList;
 
 /**
- * 广度优先搜索(层次遍历) Created by Ping on 2019/4/28.
+ * 广度优先搜索(层次遍历队列实现) Created by Ping on 2019/4/28.
  */
 public class BFS {
     public void Layertraversal(TreeNode root){
