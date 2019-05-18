@@ -1,7 +1,7 @@
 package Leetcode.Important;
 
 /**
- * Created by Ping on 2019/4/29.
+ * 9.回文数 Created by Ping on 2019/4/29.
  */
 public class PalindromeNumber {
     public boolean isPalindrome(int x) {
