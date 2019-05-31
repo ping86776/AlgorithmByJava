@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Important;
 
 /**
  * 171. Excel表列序号 Created by Ping on 2019/5/30.
@@ -19,5 +19,6 @@ public class ExcelSheetColumnNumber {
     public static void main(String[] args) {
         ExcelSheetColumnNumber e = new ExcelSheetColumnNumber();
         e.titleToNumber("AB");
+
     }
 }

@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Important;
 
 /**
  * 371. 两整数之和 Created by Ping on 2019/5/31.
