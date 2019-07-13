@@ -1,5 +1,8 @@
 package Leetcode.LinkedList;
 
+/**
+ * 199.删除链表的倒数第N个节点
+ */
 public class RemoveNthNodeFromEndofList {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode pre = new ListNode(0);
