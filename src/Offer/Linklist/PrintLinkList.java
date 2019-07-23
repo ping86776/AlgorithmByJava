@@ -11,17 +11,17 @@ import java.util.Stack;
  * 从尾到头打印链表
  */
 public class PrintLinkList {
+    private static List<Integer> result = new ArrayList<>();
     public static List<Integer> printListFromTailToHead(ListNode head) {
         if (head == null) return new ArrayList<>();
 
         Stack<ListNode> stack = new Stack<>();
         List<Integer> res = new ArrayList<>();
 
-        ListNode node = head;
 
-        while (node != null) {
-            stack.push(node);
-            node = node.next;
+        while (head != null) {
+            stack.push(head);
+            head = head.next;
         }
 
         while (!stack.isEmpty()){
@@ -30,6 +30,17 @@ public class PrintLinkList {
         }
         return res;
 
+    }
+
+    public static List<Integer> printListFromTailToHead2(ListNode head) {
+        if (head != null){
+            if (head.next != null) {
+                printListFromTailToHead2(head.next);
+            }
+            System.out.println(head.val);
+            result.add(head.val);
+        }
+        return result;
     }
 
     public static void main(String[] args) {
@@ -41,5 +52,9 @@ public class PrintLinkList {
 
         List<Integer> list = PrintLinkList.printListFromTailToHead(head);
         System.out.println(list);
+
+//        List<Integer> list = PrintLinkList.printListFromTailToHead2(head);
+//        System.out.println(list);
+
     }
 }
