@@ -1,4 +1,4 @@
-package Offer;
+package Offer.Tree;
 
 import Leetcode.BinaryTrees.TreeNode;
 
