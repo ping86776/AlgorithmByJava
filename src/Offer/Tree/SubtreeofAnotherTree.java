@@ -2,6 +2,9 @@ package Offer.Tree;
 
 import Leetcode.BinaryTrees.TreeNode;
 
+/**
+ * 树的子结构
+ */
 public class SubtreeofAnotherTree {
     private static boolean isSubtree(TreeNode s, TreeNode t) {
         if (s == null && t ==null) return true;
