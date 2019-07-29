@@ -4,6 +4,9 @@ import Leetcode.BinaryTrees.TreeNode;
 
 import java.util.LinkedList;
 
+/**
+ * 序列化反序列化二叉树
+ */
 public class SerializeandDeserializeBST {
     //序列化
     public static String Serialize(TreeNode root) {
