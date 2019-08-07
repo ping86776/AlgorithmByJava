@@ -62,5 +62,6 @@ public class NumberAppearInSortedArray {
         int[] arr = new int[]{1,1,2,2,3,3,3};
         int val = NumberAppearInSortedArray.find(arr, 2);
         System.out.println(val);
+        System.out.println(2%5);
     }
 }
