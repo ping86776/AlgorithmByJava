@@ -25,6 +25,6 @@ public class ClimbingStairsN {
     }
 
     public static void main(String[] args) {
-        System.out.println(ClimbingStairsN.JumpFloorII(0));
+        System.out.println(ClimbingStairsN.JumpFloorII2(2));
     }
 }
